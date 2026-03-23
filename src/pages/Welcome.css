@@ -1,0 +1,189 @@
+/* COLOR PALETTE */
+:root{
+  --pink1:#ff2e8a;
+  --pink2:#ff4da6;
+  --pink3:#ff66b3;
+  --pink4:#ff80bf;
+  --pink5:#ff99cc;
+  --pink6:#ffb3d9;
+  --pink7:#ffcce6;
+  --pink8:#ffe0f0;
+}
+
+/* PAGE */
+
+.welcome-container{
+  height:100vh;
+  width:100%;
+  display:flex;
+  font-family:Inter, system-ui, sans-serif;
+  background:white;
+}
+
+
+/* LEFT SIDE */
+
+.hero-section{
+  width:55%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:80px;
+}
+
+.hero-content{
+  max-width:520px;
+}
+
+
+/* TITLE ROW */
+
+.title-row{
+  display:flex;
+  align-items:center;
+  gap:22px;
+}
+
+
+/* ICON */
+
+.hero-icon{
+  width:80px;
+  height:80px;
+}
+
+
+/* TITLE */
+
+.hero-title{
+  font-size:52px;
+  font-weight:700;
+  line-height:1.15;
+
+  background:linear-gradient(
+    90deg,
+    #ff2e8a,
+    #ff66b3,
+    #ff99cc
+  );
+  background-clip: text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+
+/* SUBTITLE */
+
+.hero-subtitle{
+  margin-top:20px;
+  font-size:18px;
+  color:#6b7280;
+  line-height:1.6;
+}
+
+
+/* RIGHT SIDE */
+
+.form-section{
+  width:45%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+/* FORM CARD */
+
+.form-card{
+  width:380px;
+  background:white;
+  padding:40px;
+  border-radius:16px;
+
+  box-shadow:0 12px 30px rgba(255,46,138,0.15);
+
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+
+/* WELCOME */
+
+.welcome-title{
+  font-size:28px;
+  font-weight:600;
+
+  background:linear-gradient(
+    90deg,
+    var(--pink2),
+    var(--pink4)
+  );
+
+  background-clip: text;
+  -webkit-background-clip:text;
+  
+  -webkit-text-fill-color:transparent;
+}
+
+
+/* INPUT */
+
+.name-input{
+  padding:14px;
+  border-radius:10px;
+  border:1px solid var(--pink7);
+  font-size:16px;
+  outline:none;
+
+}
+
+.name-input:focus{
+  border-color:var(--pink3);
+}
+
+
+/* DROPDOWN */
+
+.role-select{
+  padding:14px;
+  border-radius:10px;
+  border:1px solid var(--pink7);
+  font-size:16px;
+  background:white;
+  outline:none;
+}
+
+.role-select:focus{
+  border-color:var(--pink3);
+}
+
+
+/* BUTTON */
+
+.continue-btn{
+  margin-top:10px;
+  padding:14px;
+  border-radius:10px;
+  border:none;
+
+  background:linear-gradient(
+    90deg,
+    var(--pink1),
+    var(--pink3)
+  );
+
+  color:white;
+  font-size:16px;
+  font-weight:500;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.continue-btn:hover{
+  background:linear-gradient(
+    90deg,
+    var(--pink2),
+    var(--pink4)
+  );
+}
